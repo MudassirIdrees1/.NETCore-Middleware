@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="12/21/2022 10:33:32">
+  <assembly name="/projects/challenge/RoomService.Tests/bin/Debug/netcoreapp3.0/RoomService.Tests.dll" run-date="2022-12-21" run-time="10:33:32" total="3" passed="0" failed="3" skipped="0" time="1.067" errors="0">
+    <errors />
+    <collection total="3" passed="0" failed="3" skipped="0" name="Test collection for RoomService.Tests.IntegrationTests" time="1.067">
+      <test name="RoomService.Tests.IntegrationTests.Test2" type="RoomService.Tests.IntegrationTests" method="Test2" time="0.9521336" result="Fail">
+        <failure>
+          <message>System.InvalidOperationException : Endpoint RoomService.WebAPI.Controllers.RoomsController.Add (RoomService.WebAPI) contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).</message>
+          <stack-trace>   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at RoomService.WebAPI.PasswordCheckerMiddleware.InvokeAsync(HttpContext context) in /projects/challenge/RoomService.WebAPI/PasswordCheckerMiddleware.cs:line 53
+   at Microsoft.AspNetCore.TestHost.HttpContextBuilder.&lt;&gt;c__DisplayClass20_0.&lt;&lt;SendAsync&gt;g__RunRequestAsync|0&gt;d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RoomService.Tests.IntegrationTests.SeedData() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 38
+   at RoomService.Tests.IntegrationTests.Test2() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 87
+--- End of stack trace from previous location where exception was thrown ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="RoomService.Tests.IntegrationTests.Test1" type="RoomService.Tests.IntegrationTests" method="Test1" time="0.0440401" result="Fail">
+        <failure>
+          <message>System.InvalidOperationException : Endpoint RoomService.WebAPI.Controllers.RoomsController.Add (RoomService.WebAPI) contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).</message>
+          <stack-trace>   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at RoomService.WebAPI.PasswordCheckerMiddleware.InvokeAsync(HttpContext context) in /projects/challenge/RoomService.WebAPI/PasswordCheckerMiddleware.cs:line 53
+   at Microsoft.AspNetCore.TestHost.HttpContextBuilder.&lt;&gt;c__DisplayClass20_0.&lt;&lt;SendAsync&gt;g__RunRequestAsync|0&gt;d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RoomService.Tests.IntegrationTests.SeedData() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 38
+   at RoomService.Tests.IntegrationTests.Test1() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="RoomService.Tests.IntegrationTests.Test3" type="RoomService.Tests.IntegrationTests" method="Test3" time="0.0703923" result="Fail">
+        <failure>
+          <message>System.InvalidOperationException : Endpoint RoomService.WebAPI.Controllers.RoomsController.Add (RoomService.WebAPI) contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).</message>
+          <stack-trace>   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at RoomService.WebAPI.PasswordCheckerMiddleware.InvokeAsync(HttpContext context) in /projects/challenge/RoomService.WebAPI/PasswordCheckerMiddleware.cs:line 53
+   at Microsoft.AspNetCore.TestHost.HttpContextBuilder.&lt;&gt;c__DisplayClass20_0.&lt;&lt;SendAsync&gt;g__RunRequestAsync|0&gt;d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RoomService.Tests.IntegrationTests.SeedData() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 38
+   at RoomService.Tests.IntegrationTests.Test3() in /projects/challenge/RoomService.Tests/IntegrationTests.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
