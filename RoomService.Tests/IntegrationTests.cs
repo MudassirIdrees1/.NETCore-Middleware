@@ -45,10 +45,10 @@ namespace RoomService.Tests
 
             var createForm3 = GenerateCreateForm("Room Category 4", 123, 1, DateTime.Parse("06.11.2019"));
             var response3 = await Client.PostAsync("/api/rooms", new StringContent(JsonConvert.SerializeObject(createForm3), Encoding.UTF8, "application/json"));
-       
+
             var createForm4 = GenerateCreateForm("Room Category 5", 573, 5, DateTime.Parse("03.01.2020"));
             var response4 = await Client.PostAsync("/api/rooms", new StringContent(JsonConvert.SerializeObject(createForm4), Encoding.UTF8, "application/json"));
-       
+
             var createForm5 = GenerateCreateForm("Room Category 6", 632, 6, DateTime.Parse("06.12.2018"));
             var response5 = await Client.PostAsync("/api/rooms", new StringContent(JsonConvert.SerializeObject(createForm5), Encoding.UTF8, "application/json"));
         }

@@ -3,11 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RoomService.WebAPI.Data;
 using RoomService.WebAPI.Services;
-using Microsoft.AspNetCore.Authorization;
 
 namespace RoomService.WebAPI.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class RoomsController : ControllerBase
